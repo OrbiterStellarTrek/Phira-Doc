@@ -1,6 +1,6 @@
 {
-  "name": "napcatadapter-docs",
-  "author": "OrbiterStellarTrek",
+  "name": "phira-docs",
+  "author": "OrbiterStellarTrek，Teamflos",
   "dependencies": {
     "@nolebase/ui-asciinema": "^2.18.2",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.1",
