@@ -9,7 +9,7 @@
 - 优化 RPE 文字支持
 - 修复部分情况下黑屏 bug
 
-本文档问题请在[Phira官方](https://pd.qq.com/s/ezgv3q71g)QQ频道联系@Dmockenm，或前往[问题反馈](https://phira.dmocken.top/report)提交反馈。
+本文档问题请在[Phira官方](https://pd.qq.com/s/ezgv3q71g)QQ频道联系@Dmocken，或前往[问题反馈](https://phira.dmocken.top/report)提交反馈。
 
 ## 开始前，你需要准备：
 
