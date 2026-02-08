@@ -1,11 +1,9 @@
-# v0.6.0 Update Message
+# 6thPecJam
 
-This incident occurred at 23:16 on 2024-01-01 (the time when Mivik sent the message "wtf did you do?" in the update discussion group)
+This incident occurred around 00:40 on the early morning of 2024-02-10, which was over half an hour later than the scheduled PecJam submission opening time of 00:00 on 2024-02-10.
 
-Similar to the [Willow catkins in the wind](./长风的柳絮.md) incident, this was a serious consequence of manual database operations. This incident is also referred to as "Willow Catkins of Changfeng 2."
+> Note: 2024-02-09 was New Year's Eve. Everyone was staying up late, waiting to submit their PecJam entries.
 
 ## Incident Details
 
-sjfhsjfh attempted to modify an erroneously released announcement. In a state of panic and haste, improper operations resulted in the content of all messages for all users being changed to the new announcement content (i.e., the v0.6.0 update announcement).
-
-> This incident cost Mivik approximately an entire evening to recover, and all messages from that day were lost.
+Seeing everyone in the group chat asking why the PecJam submission channel hadn't opened yet, sjfhsjfh hastily and carelessly modified the Phira backend code in a state of anxiety. The changes were submitted without even performing a compilation check, ultimately forcing Mivik to crawl out of a warm bed to help fix the issue. This was truly a grave offense.
