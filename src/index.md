@@ -13,7 +13,7 @@ hero:
       text: 多人联机服务器状态
       link: "https://status.dmocken.top/"
     - theme: alt
-      text: 前往 Github 项目主页
+      text: Github
       link: "https://github.com/Teamflos/Phira"
   image:
       src: /favicon.png

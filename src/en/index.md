@@ -13,7 +13,7 @@ hero:
       text: Multiplayer Server Status
       link: "https://status.dmocken.top/"
     - theme: alt
-      text: GitHub Project
+      text: GitHub
       link: "https://github.com/Teamflos/Phira"
   image:
       src: /favicon.png
