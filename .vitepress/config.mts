@@ -31,9 +31,8 @@ export default defineConfig({
       ], 
     }, 
   }, 
-  title: "Phira",
-  description: "Phigros 二创社区",
-  lang: "zh-CN",
+  description: "有关Phira的文档",
+  lang: "zh-Hans",
   srcDir: './src',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
@@ -43,36 +42,44 @@ export default defineConfig({
       provider: 'local'
     },
     logo: "/favicon.png",
-    editLink: {
-      pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
-      text: '在 GitHub 上编辑此页'
-    },
-    lastUpdated: {
-      text: '更新于',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    },
-    docFooter: {
-      prev: '上一个',
-      next: '下一个'
-    },
     externalLinkIcon: true,
-    outline: {
-      level: [2,4], // 显示2-4级标题
-      // level: 'deep', // 显示2-6级标题
-      label: '当前页大纲' // 文字显示
-    },
-    returnToTopLabel:'返回顶部',
-    sidebarMenuLabel:'目录',
-
-    nav: [
-      { text: '简介', link: '/README' },
-      { text: '基础帮助文档', link: '/help/' }
-    ],
-
-    sidebar: [
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/OrbiterStellarTrek/Phira-Doc' }
+    ]
+  },
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-Hans',
+      dir: 'ltr',
+      title: "Phira 文档",
+      themeConfig: {
+        editLink: {
+          pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
+          text: '在 GitHub 上编辑此页'
+        },
+        lastUpdated: {
+          text: '更新于',
+          formatOptions: {
+            dateStyle: 'full',
+            timeStyle: 'medium'
+          }
+        },
+        docFooter: {
+          prev: '上一个',
+          next: '下一个'
+        },
+        outline: {
+          level: [2, 4],
+          label: '当前页大纲'
+        },
+        returnToTopLabel: '返回顶部',
+        sidebarMenuLabel: '目录',
+        nav: [
+          { text: '简介', link: '/README' },
+          { text: '基础帮助文档', link: '/help/' }
+        ],
+        sidebar: [
       {
         text: '简介',
         link: '/README'
@@ -251,24 +258,244 @@ export default defineConfig({
           { text: 'Forever Young', link: '/dev-incident/ForeverYoung' },
         ]
       }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/OrbiterStellarTrek/Phira-Doc' }
     ]
+      }
+    },
+    en: {
+      label: 'English',
+      lang: 'en',
+      dir: 'ltr',
+      title: "Phira Documentation",
+      themeConfig: {
+        editLink: {
+          pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
+          text: 'Edit this page on GitHub'
+        },
+        lastUpdated: {
+          text: 'Updated',
+          formatOptions: {
+            dateStyle: 'full',
+            timeStyle: 'medium'
+          }
+        },
+        docFooter: {
+          prev: 'Previous',
+          next: 'Next'
+        },
+        outline: {
+          level: [2, 4],
+          label: 'On this page'
+        },
+        returnToTopLabel: 'Back to top',
+        sidebarMenuLabel: 'Contents',
+        nav: [
+          { text: 'About', link: '/en/README' },
+          { text: 'FAQ', link: '/en/help/' }
+        ],
+        sidebar: [
+          { text: 'About', link: '/en/README' },
+          { text: 'FAQ', link: '/en/help/' },
+          {
+            text: 'Chart Standard',
+            collapsed: true,
+            items: [
+              { text: 'Standard', link: '/en/chart-standard/' },
+              { text: 'Chart Info', link: '/en/chart-standard/chartinfo' },
+              {
+                text: 'Chart File Formats',
+                link: '/en/chart-standard/chart-format/',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'RPE',
+                    collapsed: true,
+                    items: [
+                      { text: 'Root', link: '/en/chart-standard/chart-format/rpe/root' },
+                      { text: 'Judge Line', link: '/en/chart-standard/chart-format/rpe/judgeLine' },
+                      { text: 'beat', link: '/en/chart-standard/chart-format/rpe/beat' },
+                      { text: 'Note', link: '/en/chart-standard/chart-format/rpe/note' },
+                      { text: 'Events', link: '/en/chart-standard/chart-format/rpe/event' },
+                      { text: 'Extended Events', link: '/en/chart-standard/chart-format/rpe/extendEvent' },
+                      { text: 'Extended Params', link: '/en/chart-standard/chart-format/rpe/extend' },
+                      { text: 'Controls', link: '/en/chart-standard/chart-format/rpe/controls' },
+                    ]
+                  },
+                  {
+                    text: 'PE',
+                    link: '/en/chart-standard/chart-format/pe/',
+                    collapsed: true,
+                    items: [
+                      { text: 'Basic', link: '/en/chart-standard/chart-format/pe/basic' },
+                      { text: 'Events', link: '/en/chart-standard/chart-format/pe/event' },
+                      { text: 'Notes', link: '/en/chart-standard/chart-format/pe/note' },
+                    ]
+                  },
+                  {
+                    text: 'Official',
+                    collapsed: true,
+                    items: [
+                      { text: 'Root', link: '/en/chart-standard/chart-format/phi/root' },
+                      { text: 'Note', link: '/en/chart-standard/chart-format/phi/note' },
+                      { text: 'Events', link: '/en/chart-standard/chart-format/phi/event' },
+                      { text: 'Judge Line', link: '/en/chart-standard/chart-format/phi/judgeLine' },
+                    ]
+                  }
+                ]
+              },
+              { text: 'Music Format', link: '/en/chart-standard/music' },
+              {
+                text: 'Extended Features',
+                link: '/en/chart-standard/extra/',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Effects',
+                    link: '/en/chart-standard/extra/effect/',
+                    collapsed: true,
+                    items: [
+                      {
+                        text: 'Built-in Shaders',
+                        collapsed: true,
+                        items: [
+                          { text: 'chromatic', link: '/en/chart-standard/extra/effect/builtin/chromatic' },
+                          { text: 'circleBlur', link: '/en/chart-standard/extra/effect/builtin/circleBlur' },
+                          { text: 'fisheye', link: '/en/chart-standard/extra/effect/builtin/fisheye' },
+                          { text: 'glitch', link: '/en/chart-standard/extra/effect/builtin/glitch' },
+                          { text: 'grayscale', link: '/en/chart-standard/extra/effect/builtin/grayscale' },
+                          { text: 'noise', link: '/en/chart-standard/extra/effect/builtin/noise' },
+                          { text: 'pixel', link: '/en/chart-standard/extra/effect/builtin/pixel' },
+                          { text: 'radialBlur', link: '/en/chart-standard/extra/effect/builtin/radialBlur' },
+                          { text: 'shockwave', link: '/en/chart-standard/extra/effect/builtin/shockwave' },
+                          { text: 'vignette', link: '/en/chart-standard/extra/effect/builtin/vignette' },
+                        ]
+                      },
+                      { text: 'Custom Shaders', link: '/en/chart-standard/extra/effect/custom-shader' },
+                    ]
+                  },
+                  { text: 'Video Background', link: '/en/chart-standard/extra/video/' },
+                ]
+              },
+              { text: 'Unlock Animation', link: '/en/chart-standard/unlock_video/' },
+            ]
+          },
+          { text: 'Resource Packs', link: '/en/respack/' },
+          { text: 'Events', link: '/en/event/' },
+          {
+            text: 'UML',
+            collapsed: true,
+            items: [
+              {
+                text: 'Syntax',
+                link: '/en/uml/syntax/README',
+                collapsed: true,
+                items: [
+                  { text: 'Coordinates', link: '/en/uml/syntax/coordinate' },
+                  { text: 'Data Types', link: '/en/uml/syntax/type' },
+                  { text: 'Expressions', link: '/en/uml/syntax/expression' },
+                  { text: 'Variables', link: '/en/uml/syntax/variable' },
+                  {
+                    text: 'Elements',
+                    link: '/en/uml/syntax/element',
+                    collapsed: true,
+                    items: [
+                      { text: 'Paragraph p', link: '/en/uml/syntax/elements/p' },
+                      { text: 'Image img', link: '/en/uml/syntax/elements/img' },
+                      { text: 'Chart collection col', link: '/en/uml/syntax/elements/col' },
+                      { text: 'Button btn', link: '/en/uml/syntax/elements/btn' },
+                    ]
+                  },
+                  { text: 'Comments', link: '/en/uml/syntax/comment' },
+                  { text: 'Comment Expressions', link: '/en/uml/syntax/comment_expression' },
+                ]
+              },
+              { text: 'Debugging', link: '/en/uml/debugging' },
+              {
+                text: 'UML Examples',
+                collapsed: true,
+                items: [
+                  { text: 'Template event', link: '/en/uml/examples/template_event' },
+                  { text: '2024 Christmas', link: '/en/uml/examples/xmas-2024' },
+                ]
+              },
+              {
+                text: 'Advanced',
+                link: '/en/uml/advanced/README',
+                collapsed: true,
+                items: [
+                  { text: 'Page switching', link: '/en/uml/advanced/page_switch' },
+                ]
+              }
+            ]
+          },
+          {
+            text: 'Phira Build Guide',
+            collapsed: true,
+            items: [
+              { text: 'Cargo install', link: '/en/phira_build_guide/cargo' },
+              { text: 'Windows', link: '/en/phira_build_guide/Windows' },
+              { text: 'Linux', link: '/en/phira_build_guide/Linux' },
+              { text: 'Android', link: '/en/phira_build_guide/Android' },
+            ]
+          },
+          {
+            text: 'Phira MP Build Guide',
+            collapsed: true,
+            items: [
+              { text: 'Guide', link: '/en/mp_build_guide/' },
+              { text: 'Termux (Android)', link: '/en/mp_build_guide/Termux' },
+              { text: 'Windows', link: '/en/mp_build_guide/Windows' },
+              { text: 'Linux', link: '/en/mp_build_guide/Linux' },
+            ]
+          },
+          {
+            text: 'Dev incidents',
+            collapsed: true,
+            items: [
+              { text: 'Overview', link: '/en/dev-incident/README' },
+              { text: '长风的柳絮', link: '/en/dev-incident/长风的柳絮' },
+              { text: 'v0.6.0 update message', link: '/en/dev-incident/v0.6.0更新消息' },
+              { text: '6th PecJam', link: '/en/dev-incident/6thpecjam' },
+              { text: '天空之城', link: '/en/dev-incident/天空之城' },
+              { text: 'Forever Young', link: '/en/dev-incident/ForeverYoung' },
+            ]
+          }
+        ],
+      },
+    }
   },
   markdown: {
-    container: {
-      tipLabel: '提示',
-      warningLabel: '警告',
-      dangerLabel: '危险',
-      infoLabel: '信息',
-      detailsLabel: '更多'
-    },
     config(md) {
       md.use(MermaidMarkdown);
       md.use(markdownItTaskCheckbox); //todo
       md.use(groupIconMdPlugin) //代码组图标
+      const fence = md.renderer.rules.fence!
+      md.renderer.rules.fence = function (tokens, idx, options, env, self) {
+        const { localeIndex = 'root' } = env
+        const codeCopyButtonTitle = (() => {
+          switch (localeIndex) {
+            case 'es':
+              return 'Copiar código'
+            case 'fa':
+              return 'کپی کد'
+            case 'ko':
+              return '코드 복사'
+            case 'pt':
+              return 'Copiar código'
+            case 'ru':
+              return 'Скопировать код'
+            case 'zh':
+              return '复制代码'
+            case 'ja':
+              return 'コードをコピー'
+            default:
+              return 'Copy code'
+          }
+        })()
+        return fence(tokens, idx, options, env, self).replace(
+          '<button title="Copy Code" class="copy"></button>',
+          `<button title="${codeCopyButtonTitle}" class="copy"></button>`
+        )
+      }
     },
   },
   sitemap: {
