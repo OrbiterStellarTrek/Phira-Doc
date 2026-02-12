@@ -1,15 +1,24 @@
 # Phira MP Build Guide
 
-> [!NOTE]
-> Content pending...
+## Rust Official
+
+### [Termux](Termux.md)
+
+### [Windows](Windows.md)
+
+### [Linux](Linux.md)
+
+## Other Dev Languages
 
 For pre-built packages, see [Dmocken's download site](https://phira.dmocken.top/mulity).
 
-Other language implementations may provide ready-to-use builds:
-
-[TypeScript](https://github.com/Pimeng/tphira-mp) <br>
-[Python](https://github.com/Evi233/pyphira-mp) <br>
-[C#](https://github.com/NuanRMxi-Lazy-Team/PhiraMpServerCSharp) <br>
-[Java](https://github.com/lRENyaaa/jphira-mp) | [Java protocol lib](https://github.com/lRENyaaa/jphira-mp-protocol) <br>
+| Project Name     |    Dev Language    |    Developer    |
+| -----------  | ----------- | ----------- |
+| [tphira-mp](https://github.com/Pimeng/tphira-mp)| Typescript | [Pimeng](https://github.com/Pimeng)       |
+| [jphiramp](https://github.com/lRENyaaa/jphira-mp)| Java | [lRENyaaa](https://github.com/lRENyaaa)       |
+| [pyphira-mp](https://github.com/Evi233/pyphira-mp)| Python | [Evi233](https://github.com/Evi233)       |
+| [gphira-mp](https://github.com/PhiraMp/gphira-mp)| Go | [Pimeng](https://github.com/Pimeng)       |
+| [phira-mp-nodejsver](https://github.com/chuzouX/phira-mp-nodejsver)| Typescript | [chuzouX](https://github.com/chuzouX)       |
+| [PhiraMpServerCSharp](https://github.com/NuanRMxi-Lazy-Team/PhiraMpServerCSharp)| C# | [NuanRMxi-Lazy-Team](https://github.com/NuanRMxi-Lazy-Team)       |
 
 If you have your own Phira-mp build or run a Phira-mp server, contact us via [Feedback](https://phira.dmocken.top/report).

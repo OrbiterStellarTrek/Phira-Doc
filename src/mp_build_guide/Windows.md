@@ -11,7 +11,7 @@
 
 ### 安装git工具并下载源码
 
-1. 首先下载下载[git工具](https://git-scm.cn/)。
+1. 首先下载[git工具](https://git-scm.cn/)。
 2. 在任意位置新建文件夹，使用`git https://github.com/TeamFlos/phira-mp.git`或`gh repo clone TeamFlos/phira-mp`下载Phira-mp源码。
 
 ### 安装rust
